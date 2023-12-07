@@ -263,10 +263,11 @@ div {
   padding: 0;
 }
 .slider img {
-  width: 50%;
   display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width:100%;
+  max-height:38em;
+  width: auto;
+  height: auto;
 }
 .slider1 {
   width: 670px;
