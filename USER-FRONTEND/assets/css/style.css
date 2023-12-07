@@ -4,8 +4,12 @@
 }
 body {
   font-family: Arial;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 13px;
+}
+p{
+  line-height: 2em;
+
 }
 a{
   text-decoration: none;
@@ -231,7 +235,7 @@ div {
 }
 /* dropdown css level two*/
 .main_menu_area ul li ul li ul {
-  background: none repeat scroll 0 0 #0d0e0f;
+  background: none repeat scroll 0 0 #ffffff;
   right: 215px;
   position: absolute;
   width: 215px;
@@ -432,68 +436,84 @@ div {
 
 /* Pengumuman */
 
+/* Default styles */
 
 #homepage {
-  display: block;
-  position: relative;
-  width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.homepage {
-  display: block;
-  width: 100%;
-  margin: 15px 0 0 0;
-  padding: 0;
-}
 .homepage ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .homepage li {
-  display: block;
-  float: left;
-  width: 300px;
-  margin: 0 30px 0 0;
-  padding: 0;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
-.homepage li.last {
-  margin-right: 0;
+
+.homepage li:hover {
+  transform: translateY(-5px);
 }
-.homepage li h2 {
-  display: block;
-  width: 100%;
+
+.homepage li img {
+  max-width: 100%;
   height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.homepage li h2 {
+  padding: 15px;
   margin: 0;
-  padding: 15px 0 8px 0;
-  font-weight: normal;
-  line-height: normal;
-  border-bottom: 1px dotted #999999;
-}
-.homepage li h2 img {
-  float: left;
-  margin: -15px 8px 0 0;
-  padding: 5px;
-  border: 1px solid #999999;
-}
-.homepage p {
-  margin: 0 0 25px 0;
-  padding: 0;
-  line-height: 2em;
-  font-size: 14px;
-}
-.homepage p.readmore {
-  display: block;
-  text-align: right;
-  line-height: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.2;
 }
+
+.homepage p {
+  padding: 15px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.homepage p.readmore {
+  text-align: right;
+  margin-top: 10px;
+}
+
 .homepage p.readmore a {
-  padding: 8px 15px 10px;
-  color: #ffffff;
-  background-color: #95ad19;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #428bca;
+  text-decoration: none;
+  border-radius: 3px;
 }
+
+/* Clearfix for floated elements */
+.homepage::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 480px) {
+  .homepage li {
+    width: 100%;
+  }
+}
+
 
 /* Program Pendidikan */
 .about-upcoming-shows {
