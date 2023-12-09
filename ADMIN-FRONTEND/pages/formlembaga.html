@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Startmin - Bootstrap Admin Theme</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/metisMenu.min.css" rel="stylesheet">
+        <link href="../css/timeline.css" rel="stylesheet">
+        <link href="../css/startmin.css" rel="stylesheet">
+        <link href="../css/morris.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+
+        <style>
+            .del-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+    
+            .del-logo img {
+                margin-right: 8px;
+            }
+    
+            .logo-text {
+                font-size: 1.5em;
+            }
+            #side-menu li a {
+    font-size: 25px;
+}
+            .institut-text {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .admin-text {
+    font-size: 18px; 
+    margin-right: 200px;
+}
+            .sidebar {
+    width: 250px;
+    height: 940px;
+    border-right: 1px solid #ddd; 
+}
+
+
+#side-menu li a {
+    font-size: 18px;
+    padding: 35px 20px; 
+}
+.navbar {
+        background-color: #0477BF;
+        border: none;
+        margin-left: 250px;
+    }
+    .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-row {
+        display: flex;
+        align-items: center;
+    }
+
+    .table-text {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .table-description {
+    max-width: 800px; /* Set a specific max-height for the description column */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table th {
+    background-color: #343a40; /* Dark color for table header */
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #007BFF; /* Warna biru, sesuaikan dengan kebutuhan Anda */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+            .admin-text {
+    font-size: 18px; /* Sesuaikan ukuran font yang diinginkan */
+    margin-right: 200px; /* Sesuaikan margin kanan sesuai kebutuhan */
+}
+            .sidebar {
+    width: 250px; /* Set the width as needed */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    height: 100%; /* Make the sidebar take 100% height */
+    border-right: 1px solid #ddd; /* Tambahkan border pada sisi kanan sidebar */
+}
+#side-menu li a {
+    font-size: 18px;
+    padding: 35px 20px; /* Sesuaikan padding atas-bawah dan kiri-kanan sesuai kebutuhan */
+}
+    
+        </style>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Navigation -->
+           
+            
+            <aside class="sidebar navbar-default" role="navigation"><br>
+                <div class="sidebar-nav navbar-collapse">
+                    <div class="del-logo">
+                        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                            <img src="images/download.png" alt="Logo Del" width="100px" height="100px">
+                            <h2>Institut Teknologi Del</h2>
+                        </div>
+                    </div>
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="pengumuman.html"><i class="fa fa-bar-chart-o fa-fw"></i> Pengumuman</a>
+                            
+                        </li>
+                        <li>
+                            <a href="programpendidikan.html"><i class="fa fa-bar-chart-o fa-fw"></i> Program Pendidikan</a>
+                            
+                        </li>
+                        <li>
+                            <a href="lembaga.html"><i class="fa fa-bar-chart-o fa-fw"></i> Lembaga</a>
+                            
+                        </li>
+                        <li>
+                            <a href="fasilitas.html"><i class="fa fa-bar-chart-o fa-fw"></i> Fasilitas</a>
+                            
+                        </li>
+                    
+                </div>
+            </aside>
+            <!-- /.sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"style="width: 1670px;">
+            
+                
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            
+
+                <ul class="nav navbar-right navbar-top-links">
+                  
+                        
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw" style="font-size: 20px; color: white; background-color: #0477BF;"></i> <b class="caret"></b>
+                        </a>
+                        
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-comment fa-fw"></i> New Comment
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-tasks fa-fw"></i> New Task
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; font-size: 18px; pointer-events: none;">
+                                <i class="fa fa-user fa-fw"></i> Cristian Nicolas Tambunan <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                </ul>                        </li>
+                    
+                    
+                        
+                      
+                <!-- /.navbar-top-links -->
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">Lembaga</h1>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <b><h3>Tambah Lembaga</h3></b>
+                                    </div>
+                                    <div class="col-md-6 text-end">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- Tombol Add dipindahkan ke sini -->
+                                            </div>
+                                            <div class="col-md-5">
+                                                <!-- Tampilan Search -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card-body">
+                                <!-- Add your form here -->
+                                <form id="announcementForm" enctype="multipart/form-data">
+                                    <div class="mb-3">
+                                        <label for="announcementTitle" class="form-label">Judul Lembaga</label>
+                                        <input type="text" class="form-control" id="announcementTitle" name="announcementTitle" required>
+                                    </div>
+                                    <br><br>
+                                    <div class="mb-3">
+                                        <label for="announcementContent" class="form-label">Deskripsi</label>
+                                        <textarea class="form-control" id="announcementContent" name="announcementContent" rows="5" required></textarea>
+                                    </div>
+                                    <br><br>
+                                    <br><br><br>
+                                    <a href="lembaga.html" class="btn btn-success ">
+                                        <i class="bi bi-plus"></i> Submit
+                                    </a>
+                                    <a href="lembaga.html" class="btn btn-danger ">
+                                        <i class="bi bi-plus"></i> Back
+                                    </a>
+                                        
+                                </form>
+                                <!-- End of the form -->
+                        
+                                <!-- Pagination -->
+                            </div>
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                    <!-- /.row -->
+                    <br><br>
+                    <!-- /.row -->
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- /#wrapper -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/metisMenu.min.js"></script>
+        <script src="../js/raphael.min.js"></script>
+        <script src="../js/morris.min.js"></script>
+        <script src="../js/morris-data.js"></script>
+        <script src="../js/startmin.js"></script>
+
+    </body>
+
+</html>
