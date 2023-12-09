@@ -127,6 +127,60 @@
           </div>
         </div>  
       </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <h3>CONTACT US</h3>
+          <p>
+            <strong>Institut Teknologi Del</strong><br>
+            Jl. Sisingamangaraja, Sitoluama<br>
+            Laguboti, Toba Samosir<br>
+            Sumatera Utara, Indonesia<br>
+            Kode Pos: 22381<br>
+            Telp: +62 632 331234<br>
+            Fax: +62 632 331116<br>
+            Website: <a href="http://www.del.ac.id" target="_blank">www.del.ac.id</a><br>
+            Email: <a href="mailto:info@del.ac.id">info@del.ac.id</a><br>
+            Karir: <a href="mailto:karir@del.ac.id">karir@del.ac.id</a>
+          </p>
+        </div>
+        <div class="map-container">
+          <iframe
+            id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.3672650346807!2d99.14384365081787!3d2.383243071103135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e00fdad2d7341%3A0xf59ef99c591fe451!2sInstitut%20Teknologi%20Del!5e0!3m2!1sid!2sid!4v1702051911543!5m2!1sid!2sid"
+            width="300"
+            height="200"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Institut Teknologi Del. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+    
+  <script>
+    function initMap() {
+        var myLatLng = { lat: -6.2088, lng: 106.8456 };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 15
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Lokasi Saya'
+        });
+    }
+</script>
       <script type="text/javascript" src="assets/js/jquery-min.js"></script>
       <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
